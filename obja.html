@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Tu Empresa de Software</title>
+    <!-- Agrega aquí los enlaces a Bootstrap y Font Awesome -->
+    <link rel="stylesheet" href="path/to/bootstrap.css">
+    <link rel="stylesheet" href="path/to/font-awesome.css">
+    <!-- Agrega tus estilos CSS personalizados aquí -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-RVpymzKYHTh7SjKULZ45g7Zu4wd4n1HyH9/UWSLtzjyQbYnYfqD8z5P5Bh13ZK5HtF5W5MW9JFhjK/7OnbYJzQ==" crossorigin="anonymous" />
+<!-- Añade estas etiquetas en tu <head> para importar las bibliotecas necesarias -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+    <!-- Añade estas etiquetas al final de tu <body> antes de tu código JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+
+</head>
+<body>
+
+<!-- Sección de Portafolio/Proyectos -->
+<section class="portafolio">
+    <div class="container">
+        <div class="section-title">
+            <h2>Nuestro Portafolio de Proyectos</h2>
+        </div>
+        <div class="row">
+            <!-- Tarjeta 1 - Desarrollo Web con .NET -->
+            <div class="col-md-4">
+                <div class="proyecto-card">
+                    <div class="proyecto-img">
+                        <img src="img/proyecto-1.jpg" alt="Proyecto 1">
+                    </div>
+                    <h3>Desarrollo Web con .NET</h3>
+                    <p>Proyecto de desarrollo web utilizando tecnología .NET para una empresa líder en su industria.</p>
+                    <a href="#" class="ver-mas">Ver Más</a>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 2 - Sistema de Compra Venta -->
+            <div class="col-md-4">
+                <div class="proyecto-card">
+                    <div class="proyecto-img">
+                        <img src="img/proyecto-2.jpg" alt="Proyecto 2">
+                    </div>
+                    <h3>Sistema de Compra Venta</h3>
+                    <p>Desarrollo de un sistema de compra venta en línea que ha revolucionado la forma de hacer negocios.</p>
+                    <a href="#" class="ver-mas">Ver Más</a>
+                </div>
+            </div>
+            
+            <!-- Tarjeta 3 - Desarrollo Móvil -->
+            <div class="col-md-4">
+                <div class="proyecto-card">
+                    <div class="proyecto-img">
+                        <img src="img/proyecto-3.jpg" alt="Proyecto 3">
+                    </div>
+                    <h3>Desarrollo Móvil</h3>
+                    <p>Creación de una aplicación móvil innovadora que ha ganado popularidad en la industria.</p>
+                    <a href="#" class="ver-mas">Ver Más</a>
+                </div>
+            </div>
+        </div>
+        <div class="section-title">
+            <h2>Testimonios de Clientes Satisfechos</h2>
+        </div>
+        <div class="row">
+            <!-- Testimonio 1 -->
+            <div class="col-md-4">
+                <div class="testimonio-card">
+                    <div class="testimonio-img">
+                        <img src="img/cliente-1.jpg" alt="Cliente 1">
+                    </div>
+                    <p>"Excelente trabajo. Estamos muy satisfechos con los resultados."</p>
+                    <h3>Cliente 1</h3>
+                </div>
+            </div>
+            
+            <!-- Testimonio 2 -->
+            <div class="col-md-4">
+                <div class="testimonio-card">
+                    <div class="testimonio-img">
+                        <img src="img/cliente-2.jpg" alt="Cliente 2">
+                    </div>
+                    <p>"El equipo de desarrollo es altamente competente y profesional."</p>
+                    <h3>Cliente 2</h3>
+                </div>
+            </div>
+            
+            <!-- Testimonio 3 -->
+            <div class="col-md-4">
+                <div class="testimonio-card">
+                    <div class="testimonio-img">
+                        <img src="img/cliente-3.jpg" alt="Cliente 3">
+                    </div>
+                    <p>"Recomendamos ampliamente sus servicios. Son expertos en su campo."</p>
+                    <h3>Cliente 3</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Sección de Call-to-Action Final -->
+<section class="cta-final">
+    <div class="container text-center">
+        <h2>¿Listo para comenzar tu proyecto?</h2>
+        <p>Estamos aquí para ayudarte a convertir tu visión en realidad. Contáctanos hoy mismo y comencemos.</p>
+        <a href="#contacto" class="btn-cta">¡Ponte en Contacto!</a>
+    </div>
+</section>
+<!-- Sección de Características o Tecnologías -->
+<section class="caracteristicas">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="caracteristica-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Desarrollo Web</h3>
+                    <p>Desarrollamos sitios web modernos y atractivos utilizando HTML, CSS y JavaScript.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="caracteristica-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Base de Datos</h3>
+                    <p>Gestionamos bases de datos eficientes utilizando MySQL y tecnologías relacionadas.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="caracteristica-card">
+                    <i class="fab fa-php"></i>
+                    <h3>Desarrollo PHP</h3>
+                    <p>Programamos aplicaciones robustas y escalables con PHP y Laravel.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="caracteristica-card">
+                    <i class="fab fa-js"></i>
+                    <h3>Desarrollo Frontend</h3>
+                    <p>Creación de experiencias interactivas con JavaScript y React.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="caracteristica-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML & CSS</h3>
+                    <p>Utilizamos las últimas tecnologías HTML5 y CSS3 para un diseño impresionante.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="caracteristica-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Características Clave</h3>
+                    <ul>
+                        <li>Seguridad avanzada</li>
+                        <li>Escalabilidad</li>
+                        <li>Experiencia de usuario excepcional</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Sección de Preguntas Frecuentes (FAQ) -->
+<section class="faq">
+    <div class="container">
+        <div class="section-title">
+            <h2>Preguntas Frecuentes</h2>
+        </div>
+        <div class="accordion" id="faqAccordion">
+            <div class="card">
+                <div class="card-header" id="faqHeading1">
+                    <h3 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#faqCollapse1" aria-expanded="true" aria-controls="faqCollapse1">
+                            ¿Cómo puedo contactar con el equipo de soporte?
+                        </button>
+                    </h3>
+                </div>
+                <div id="faqCollapse1" class="collapse show" aria-labelledby="faqHeading1" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Puedes ponerte en contacto con nuestro equipo de soporte 24/7 a través de nuestro chat en vivo o enviándonos un correo electrónico a support@example.com.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="faqHeading2">
+                    <h3 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+                            ¿Cuáles son los métodos de pago aceptados?
+                        </button>
+                    </h3>
+                </div>
+                <div id="faqCollapse2" class="collapse" aria-labelledby="faqHeading2" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Aceptamos pagos con tarjeta de crédito y débito, PayPal y transferencias bancarias. También ofrecemos opciones de financiamiento.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="faqHeading3">
+                    <h3 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+                            ¿Ofrecen servicios de desarrollo personalizado?
+                        </button>
+                    </h3>
+                </div>
+                <div id="faqCollapse3" class="collapse" aria-labelledby="faqHeading3" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Sí, ofrecemos servicios de desarrollo personalizado para adaptarnos a las necesidades específicas de tu proyecto.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="faqHeading4">
+                    <h3 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                            ¿Cómo puedo solicitar una cotización?
+                        </button>
+                    </h3>
+                </div>
+                <div id="faqCollapse4" class="collapse" aria-labelledby="faqHeading4" data-parent="#faqAccordion">
+                    <div class="card-body">
+                        Puedes solicitar una cotización en nuestro sitio web completando el formulario de contacto o llamándonos al +1234567890.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Sección Acerca de Nosotros -->
+<section class="about-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="about-content">
+                    <h2>Nuestra Historia</h2>
+                    <p>Somos un equipo apasionado de expertos en desarrollo de software. Nuestra empresa se fundó con la visión de transformar ideas en soluciones digitales innovadoras. Con años de experiencia y un compromiso inquebrantable con la excelencia, estamos aquí para ayudarte a alcanzar tus objetivos.</p>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="team-members">
+                    <div class="row">
+                        <!-- Miembro 1 -->
+                        <div class="col-md-4">
+                            <div class="team-member">
+                                <div class="member-img">
+                                    <img src="https://besthqwallpapers.com/Uploads/10-6-2022/199044/thumb2-lionel-messi-with-cup-4k-2022-argentina-national-football-team-leo-messi.jpg" alt="Miembro del equipo">
+                                    <div class="member-info">
+                                        <h3>HILLARY YOHANA</h3>
+                                        <p>CEO y Fundador</p>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Miembro 2 -->
+                        <div class="col-md-4">
+                            <div class="team-member">
+                                <div class="member-img">
+                                    <img src="img/team-member2.jpg" alt="Miembro del equipo">
+                                    <div class="member-info">
+                                        <h3>Jane Smith</h3>
+                                        <p>Desarrolladora Principal</p>
+                                        <p>Especialista en desarrollo web y móvil con un enfoque en la experiencia del usuario.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Miembro 3 -->
+                        <div class="col-md-4">
+                            <div class="team-member">
+                                <div class="member-img">
+                                    <img src="img/team-member3.jpg" alt="Miembro del equipo">
+                                    <div class="member-info">
+                                        <h3>Mike Johnson</h3>
+                                        <p>Diseñador UX/UI</p>
+                                        <p>Creador de interfaces de usuario impactantes que mejoran la usabilidad.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Miembro 4 -->
+                        <div class="col-md-4">
+                            <div class="team-member">
+                                <div class="member-img">
+                                    <img src="img/team-member4.jpg" alt="Miembro del equipo">
+                                    <div class="member-info">
+                                        <h3>Lisa Brown</h3>
+                                        <p>Desarrolladora Front-end</p>
+                                        <p>Especialista en crear experiencias de usuario atractivas en aplicaciones web.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Miembro 5 -->
+                        <div class="col-md-4">
+                            <div class="team-member">
+                                <div class="member-img">
+                                    <img src="img/team-member5.jpg" alt="Miembro del equipo">
+                                    <div class="member-info">
+                                        <h3>Sara Wilson</h3>
+                                        <p>Desarrolladora Back-end</p>
+                                        <p>Experta en programación y optimización de sistemas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Miembro 6 -->
+                        <div class="col-md-4">
+                            <div class="team-member">
+                                <div class="member-img">
+                                    <img src="https://besthqwallpapers.com/Uploads/10-6-2022/199044/thumb2-lionel-messi-with-cup-4k-2022-argentina-national-football-team-leo-messi.jpg" alt="Miembro del equipo">
+                                    <div class="member-info">
+                                        <h3>Chris Taylor</h3>
+                                        <p>Analista de Datos</p>
+                                        <p>Apasionado por extraer conocimientos valiosos a partir de datos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sección Portafolio/Proyectos -->
+<section class="portfolio">
+    <div class="container">
+        <h2 class="section-title">Portafolio/Proyectos</h2>
+        <div class="portfolio-carousel owl-carousel">
+            <!-- Proyecto 1 -->
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <img src="img/proyecto1.jpg" alt="Proyecto 1">
+                </div>
+                <div class="portfolio-content">
+                    <h3>Proyecto 1</h3>
+                    <p>Descripción del proyecto 1.</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+            <!-- Proyecto 2 -->
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <img src="img/proyecto2.jpg" alt="Proyecto 2">
+                </div>
+                <div class="portfolio-content">
+                    <h3>Proyecto 2</h3>
+                    <p>Descripción del proyecto 2.</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+            <!-- Proyecto 3 -->
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <img src="img/proyecto3.jpg" alt="Proyecto 3">
+                </div>
+                <div class="portfolio-content">
+                    <h3>Proyecto 3</h3>
+                    <p>Descripción del proyecto 3.</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+            <!-- Proyecto 4 -->
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <img src="img/proyecto4.jpg" alt="Proyecto 4">
+                </div>
+                <div class="portfolio-content">
+                    <h3>Proyecto 4</h3>
+                    <p>Descripción del proyecto 4.</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+            <!-- Proyecto 5 -->
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <img src="https://img.freepik.com/vector-premium/ilustracion-programador-trabajando-su-escritorio_23-2148270201.jpg" alt="Proyecto 5">
+                </div>
+                <div class="portfolio-content">
+                    <h3>Proyecto 5</h3>
+                    <p>Descripción del proyecto 5.</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+            <!-- Proyecto 6 -->
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <img src="https://png.pngtree.com/png-vector/20210723/ourlarge/pngtree-illustration-of-a-programmer-business-character-working-around-a-computer-png-image_3615061.jpg" alt="Proyecto 6">
+                </div>
+                <div class="portfolio-content">
+                    <h3>Proyecto 6</h3>
+                    <p>Descripción del proyecto 6.</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>$(document).ready(function() {
+    $(".portfolio-carousel").owlCarousel({
+        items: 3, // Mostrar 3 proyectos a la vez
+        loop: true, // Bucle infinito
+        autoplay: true, // Reproducción automática
+        autoplayTimeout: 5000, // Intervalo de cambio automático (5 segundos)
+        nav: true, // Flechas de navegación
+        navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"], // Iconos de flechas
+        responsive: {
+            0: {
+                items: 1 // En pantallas pequeñas, mostrar 1 proyecto a la vez
+            },
+            768: {
+                items: 2 // En pantallas medianas, mostrar 2 proyectos a la vez
+            },
+            992: {
+                items: 3 // En pantallas grandes, mostrar 3 proyectos a la vez
+            }
+        }
+    });
+});
+</script>
+   <STYLE>
+   /* Estilos para la sección Portafolio/Proyectos */
+.portfolio {
+    background-color: #000;
+    color: #fff;
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.portfolio-carousel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.portfolio-item {
+    flex: 0 0 30%; /* Mostrar tres proyectos a la vez */
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.portfolio-img img {
+    max-width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover .portfolio-img img {
+    transform: scale(1.1);
+}
+
+.portfolio-content {
+    padding: 20px 0;
+}
+
+.portfolio-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.portfolio-content p {
+    font-size: 16px;
+}
+
+.portfolio-content a {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 16px;
+    background-color: #33EAD9;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.portfolio-content a:hover {
+    background-color: #FF6B6B;
+    color: #fff;
+}
+
+   /* Estilos para la sección Acerca de Nosotros */
+.about-us {
+    background-color: #000; /* Fondo negro */
+    padding: 80px 0;
+    color: #fff; /* Color del texto */
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #33EAD9; /* Color de título */
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea arriba para el efecto deseado */
+    margin-top: 40px;
+}
+
+.team-member {
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+}
+
+.member-img {
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.member-img img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.member-info {
+    text-align: center;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.team-member:hover .member-info {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.member-info h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.member-info p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.social-icons {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-icons a {
+    color: #fff; /* Color de íconos de redes sociales */
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #33EAD9; /* Color de íconos de redes sociales al pasar el cursor */
+}
+
+  
+   /* Estilos para la sección de Preguntas Frecuentes (FAQ) */
+.faq {
+    background-color: #fff; /* Color de fondo blanco */
+    padding: 80px 0;
+}
+
+.section-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333; /* Color de texto principal */
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: #33EAD9; /* Color de fondo de las tarjetas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    background-color: #FF6B6B; /* Color de fondo al pasar el cursor */
+}
+
+.card-header {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-link {
+    color: #fff; /* Color del texto del botón */
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.card-body {
+    color: #333; /* Color del texto del cuerpo de la tarjeta */
+    font-size: 16px;
+}
+
+/* Efecto hover 3D para el botón */
+.btn-link:hover {
+    transform: rotateY(180deg);
+    transition: transform 0.3s;
+}
+
+   /* Estilos para la sección de Características o Tecnologías */
+.caracteristicas {
+    background-color: #F2F2F2;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.caracteristica-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 20px 0;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.caracteristica-card i {
+    font-size: 48px;
+    color: #33EAD9;
+    margin-bottom: 20px;
+    transition: color 0.3s;
+}
+
+.caracteristica-card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.caracteristica-card p {
+    font-size: 16px;
+    color: #666666;
+    transition: color 0.3s;
+}
+
+.caracteristica-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.caracteristica-card li {
+    margin-bottom: 10px;
+}
+
+.caracteristica-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
+}
+
+.caracteristica-card:hover i {
+    color: #ff6b6b;
+}
+
+.caracteristica-card:hover p {
+    color: #333;
+}
+
+   /* Estilos para la sección de Call-to-Action Final */
+.cta-final {
+    background-color: #33EAD9; /* Color de fondo */
+    padding: 80px 0;
+    color: #fff; /* Color del texto */
+}
+
+.cta-final h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta-final p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.btn-cta {
+    display: inline-block;
+    background-color: #FF6B6B; /* Color del botón CTA */
+    color: #fff;
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn-cta:hover {
+    background-color: #FF4848; /* Color del botón CTA en hover */
+}
+
+ /* Estilos para la sección de Portafolio/Proyectos */
+.portafolio {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.portafolio .section-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #33EAD9; /* Color del título de la sección */
+}
+
+/* Estilos para las tarjetas de proyectos */
+.proyecto-card {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.proyecto-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
+}
+
+.proyecto-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.proyecto-card h3 {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #000; /* Color del título del proyecto */
+}
+
+.proyecto-card p {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #777; /* Color del texto */
+}
+
+.ver-mas {
+    display: inline-block;
+    background-color: #33EAD9; /* Color del botón Ver Más */
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.ver-mas:hover {
+    background-color: #22C1A5; /* Color del botón Ver Más en hover */
+}
+
+/* Estilos para las tarjetas de testimonios */
+.testimonio-card {
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.testimonio-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
+}
+
+.testimonio-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.testimonio-card p {
+    font-size: 16px;
+    margin-top: 20px;
+    color: #777; /* Color del texto del testimonio */
+}
+
+.testimonio-card h3 {
+    font-size: 18px;
+    color: #000; /* Color del nombre del cliente */
+}
+
+
+   </STYLE> 
+</body>
+</html>

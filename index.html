@@ -1,0 +1,1472 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Tu Empresa de Software</title>
+    <!-- Agrega aquí los enlaces a Bootstrap y Font Awesome -->
+    <link rel="stylesheet" href="path/to/bootstrap.css">
+    <link rel="stylesheet" href="path/to/font-awesome.css">
+    <!-- Agrega tus estilos CSS personalizados aquí -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/animejs"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="https://cdn.rawgit.com/jschr/textillate/master/jquery.textillate.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-RVpymzKYHTh7SjKULZ45g7Zu4wd4n1HyH9/UWSLtzjyQbYnYfqD8z5P5Bh13ZK5HtF5W5MW9JFhjK/7OnbYJzQ==" crossorigin="anonymous" />
+<!-- Añade estas etiquetas en tu <head> para importar las bibliotecas necesarias -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+    <!-- Añade estas etiquetas al final de tu <body> antes de tu código JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    
+
+</head>
+<body>
+   
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="fas fa-code"></i></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acerca de Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portafolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script>    document.addEventListener("DOMContentLoaded", function () {
+        gsap.from("nav.navbar", { duration: 1, opacity: 0, y: -50, ease: "power2.inOut" });
+    });
+    </script>
+    <script>$(document).ready(function () {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('.navbar').addClass('navbar-scrolled');
+            } else {
+                $('.navbar').removeClass('navbar-scrolled');
+            }
+        });
+    });
+    </script>
+    <style>/* Estilos para el menú de navegación */
+        .navbar {
+            background-color: transparent;
+            transition: background-color 0.5s, position 0.5s, box-shadow 0.3s;
+            position: relative;
+            z-index: 999;
+        }
+        
+        .navbar-brand {
+            color: BLACK;
+            font-size: 24px;
+            margin-right: 20px;
+            transition: all 0.3s;
+            transform-style: preserve-3d;
+        }
+        
+        .navbar-toggler-icon {
+            background-color: #fff;
+            transition: background-color 0.3s;
+        }
+        
+        .navbar-nav {
+            margin-left: auto;
+        }
+        
+        .nav-item {
+            margin-left: 20px;
+        }
+        
+        .nav-link {
+            color: #000;
+            font-weight: bold;
+            transition: color 0.3s;
+            transform-style: preserve-3d;
+            position: relative;
+            display: inline-block;
+            perspective: 1000px;
+            overflow: hidden;
+        }
+        
+        /* Efecto de hover creativo */
+        .nav-link::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: #33EAD9;
+            top: 0;
+            left: 0;
+            transform: rotateY(90deg);
+            transform-origin: right;
+            transition: transform 0.5s, background-color 0.3s;
+            z-index: -1;
+        }
+        
+        .nav-link:hover::before {
+            transform: rotateY(0deg);
+            background-color: #fff;
+        }
+        
+        /* Cambio de color de texto al hacer hover */
+        .nav-link:hover {
+            color: #33EAD9;
+        }
+        
+        /* Cambio de color de fondo y posición al hacer scroll */
+        .navbar-scrolled {
+            background-color: #33EAD9 !important;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Cambio de color del icono del botón de navegación al hacer scroll */
+        .navbar-scrolled .navbar-toggler-icon {
+            background-color: #fff !important;
+            transition: background-color 0.3s;
+        }
+        
+        /* Cambio de color del logotipo al hacer scroll */
+        .navbar-scrolled .navbar-brand {
+            color: #fff !important;
+            transition: color 0.3s;
+        }
+        
+        /* Cambio de color de texto de los enlaces al hacer scroll */
+        .navbar-scrolled .nav-link {
+            color: #fff !important;
+            transition: color 0.3s;
+        }
+        
+        /* Cambio de color de fondo de los enlaces al hacer scroll */
+        .navbar-scrolled .nav-link::before {
+            background-color: #fff !important;
+            transition: background-color 0.3s;
+        }
+        
+        /* Efecto de hover para elementos <li> cuando el menú está en scroll */
+        .navbar-scrolled .navbar-nav li:hover {
+            background-color: #fff !important;
+            border-radius: 8px;
+        }
+        
+        /* Efecto de hover para enlaces <a> cuando el menú está en scroll */
+        .navbar-scrolled .navbar-nav li:hover a {
+            color: #33EAD9 !important;
+        }
+        
+        /* Estilos para la sección de portada */
+        .portada {
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            position: relative;
+        }
+        
+        .portada .container {
+            padding: 100px 0;
+        }
+        
+        .portada .img-empresa {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .portada .titulo-portada {
+            font-size: 36px;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 20px;
+        }
+        
+        .portada .descripcion-portada {
+            font-size: 18px;
+            color: #000;
+            margin-bottom: 30px;
+        }
+        
+        .portada .redes-sociales {
+            margin-bottom: 20px;
+        }
+        
+        /* Efecto de hover creativo para los iconos */
+        .portada .icono-red-social {
+            font-size: 32px;
+            margin: 0 15px;
+            color: #000;
+            position: relative;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .portada .icono-red-social:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #000;
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 0.3s;
+        }
+        
+        .portada .icono-red-social:hover {
+            color: #33EAD9;
+        }
+        
+        .portada .icono-red-social:hover:before {
+            transform: scaleX(1);
+        }
+        
+        
+        .portada .btn-conectanos {
+            background-color: #33EAD9;
+            color: #fff;
+            font-weight: bold;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 18px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            display: inline-block;
+        }
+        
+        .portada .btn-conectanos:hover {
+            background-color: #22C1A5;
+        }
+       /* Estilos para la sección Acerca de Nosotros */
+.about-us {
+    background-color: #000; /* Fondo negro */
+    padding: 80px 0;
+    color: #fff; /* Color del texto */
+}
+
+.about-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #33EAD9; /* Color de título */
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.team-members {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinea arriba para el efecto deseado */
+    margin-top: 40px;
+}
+
+.team-member {
+    position: relative;
+    overflow: hidden;
+    flex: 1;
+}
+
+.member-img {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.member-img img {
+    width: 100%;
+    height: 195px;
+    transition: transform 0.3s;
+}
+
+.member-info {
+    text-align: center;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(100%);
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.team-member:hover .member-info {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.member-info h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.member-info p {
+    font-size: 16px;
+    margin: 0;
+}
+
+.social-icons {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.social-icons a {
+    color: #fff; /* Color de íconos de redes sociales */
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #33EAD9; /* Color de íconos de redes sociales al pasar el cursor */
+}
+  .section-title {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #33EAD9; /* Color del título de la sección */
+        }
+        
+        /* Efecto 3D al hacer hover en las tarjetas */
+        .tarjeta-servicio:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Estilos mejorados para los efectos de hover y 3D */
+        .tarjeta-servicio {
+            position: relative;
+            background-color: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+            margin-bottom: 30px;
+        }
+        
+        .tarjeta-imagen img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        
+        .tarjeta-contenido {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .titulo-servicio {
+            font-size: 24px;
+            font-weight: bold;
+            color: #33EAD9;
+            text-align: center;
+
+        }
+        .titulo {
+            font-size: 40px;
+            font-weight: bold;
+            color:#33EAD9;
+            text-align: center;
+
+        }
+        
+        .descripcion-servicio {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+
+        }
+        
+        .ver-mas {
+            display: inline-block;
+            background-color: transparent;
+            color: #33EAD9;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            border: 2px solid #33EAD9;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        
+        .ver-mas:hover {
+            background-color: #33EAD9;
+            color: #fff;
+            text-decoration: none;
+
+        }
+        /* Efecto 3D al hacer hover en las tarjetas */
+        .tarjeta-servicio:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .tarjeta-servicio:hover .tarjeta-imagen img {
+            transform: scale(1.1);
+        }
+        
+        /* Estilos para la sección Portafolio/Proyectos */
+        .portfolio {
+            background-color: black;
+            color: #fff;
+            padding: 80px 0;
+        }
+        
+        .section-title {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .portfolio-carousel {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .portfolio-item {
+            flex: 0 0 30%; /* Mostrar tres proyectos a la vez */
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .portfolio-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        
+        .portfolio-img img {
+            max-width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        
+        .portfolio-item:hover .portfolio-img img {
+            transform: scale(1.1);
+        }
+        
+        .portfolio-content {
+            padding: 20px 0;
+        }
+        
+        .portfolio-content h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .portfolio-content p {
+            font-size: 16px;
+        }
+        
+        .portfolio-content a {
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 16px;
+            background-color: #33EAD9;
+            color: #000;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .portfolio-content a:hover {
+            background-color: #FF6B6B;
+            color: #fff;
+            text-decoration: none;
+        
+        }
+         /* Estilos para la sección de Características o Tecnologías */
+         .caracteristicas {
+            background-color: #F2F2F2;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .caracteristica-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 20px 0;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 300px;
+        }
+        
+        .caracteristica-card i {
+            font-size: 48px;
+            color: #33EAD9;
+            margin-bottom: 20px;
+            transition: color 0.3s;
+        }
+        
+        .caracteristica-card h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        
+        .caracteristica-card p {
+            font-size: 16px;
+            color: #666666;
+            transition: color 0.3s;
+        }
+        
+        .caracteristica-card ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .caracteristica-card li {
+            margin-bottom: 10px;
+        }
+        
+        .caracteristica-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
+        }
+        
+        .caracteristica-card:hover i {
+            color: #ff6b6b;
+        }
+        
+        .caracteristica-card:hover p {
+            color: #333;
+        }
+        
+        
+        /* Estilos para la sección Contacto */
+        .contacto {
+            background-color: #333;
+            padding: 80px 0;
+            color: #fff;
+        }
+        
+        .titulo-contacto {
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+        
+        .info-contacto {
+            text-align: center;
+        }
+        
+        .direccion,
+        .telefono,
+        .correo {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        
+        .redes-sociales-contacto {
+            text-align: center;
+        }
+        
+        .icono-red-social {
+            font-size: 32px;
+            margin: 0 10px;
+            color: #fff;
+            transition: transform 0.3s, opacity 0.3s;
+        }
+        
+        .icono-red-social:hover {
+            transform: scale(1.2);
+            opacity: 0.8;
+        }
+        
+        /* Estilos para la sección Contacto */
+        .contacto {
+            background-image: url('https://i.pinimg.com/originals/7a/82/84/7a828447d13eaf8fa893e64bd6a69b8b.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            text-align: center;
+            color: #fff;
+        }
+        
+        .titulo-contacto {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+        
+        .subtitulo-contacto {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .informacion-contacto {
+            text-align: left;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .direccion,
+        .telefono,
+        .correo {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .icono-red-social {
+            font-size: 24px;
+            margin: 0 10px;
+            color: #fff;
+            transition: color 0.3s;
+        }
+        
+        .icono-red-social:hover {
+            color: #33EAD9;
+        }
+        
+        .formulario-contacto {
+            text-align: left;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            background-color: transparent;
+            border-bottom: 2px solid #fff;
+            color: #fff;
+            font-size: 16px;
+        }
+        
+        textarea {
+            resize: none;
+        }
+        
+        .btn-enviar {
+            background-color: #33EAD9;
+            color: #fff;
+            font-weight: bold;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .btn-enviar:hover {
+            background-color: #22C1A5;
+        }
+        
+        
+        
+        /* Estilos para la sección Testimonios */
+        .testimonial {
+            position: relative;
+            margin: 45px 0;
+            padding: 90px 0;
+            background: #33EAD9; /* Color personalizado */
+            color: #fff; /* Texto en blanco */
+            text-align: center;
+        }
+        
+        .testimonial .testimonial-icon i {
+            font-size: 60px;
+            color: rgba(256, 256, 256, .5);
+        }
+        /* Estilos para la sección Testimonios */
+        .testimonial .testimonial-img {
+            text-align: center; /* Centra la imagen */
+        }
+        
+        .testimonial .testimonial-img img.small-image {
+            width: 250px; /* Ajusta el tamaño de la imagen */
+            height: auto;
+            margin: 0 auto; /* Centra la imagen horizontalmente */
+        }
+        
+        .testimonial .testimonial-item {
+            position: relative;
+            margin: 0 15px;
+            text-align: center;
+        }
+        
+        .testimonial .testimonial-img img {
+            margin: 0 auto;
+            width: 120px;
+            padding: 10px;
+            border: 5px dotted #fff;
+            border-radius: 100px;
+        }
+        
+        .testimonial .testimonial-text {
+            margin-top: -70px;
+            padding: 65px 35px 30px 35px;
+            text-align: center;
+            background: #fff; /* Color personalizado para el fondo */
+            border-radius: 500px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        
+        .testimonial .testimonial-text p {
+            font-size: 18px;
+            font-style: italic;
+            color: #333; /* Texto negro */
+        }
+        
+        .testimonial .testimonial-text h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #33EAD9; /* Color personalizado para el título */
+        }
+        
+        .testimonial .testimonial-text h4 {
+            font-size: 14px;
+            margin-bottom: 0;
+            color: #666666; /* Color personalizado para el subtítulo */
+        }
+        
+        /* Estilos para los puntos de navegación del carrusel */
+        .testimonial .owl-dots {
+            margin-top: 15px;
+            text-align: center;
+        }
+        
+        .testimonial .owl-dot {
+            display: inline-block;
+            margin: 0 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: rgba(256, 256, 256, .5);
+        }
+        
+        .testimonial .owl-dot.active {
+            background: #fff; /* Color personalizado para el punto activo */
+        }
+        /* Estilos para la sección de Call-to-Action Final */
+        .cta-final {
+            background-color: #33EAD9; /* Color de fondo */
+            padding: 80px 0;
+            color: #fff; /* Color del texto */
+        }
+        
+        .cta-final h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .cta-final p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+        
+        .btn-cta {
+            display: inline-block;
+            background-color: #FF6B6B; /* Color del botón CTA */
+            color: #fff;
+            font-weight: bold;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .btn-cta:hover {
+            background-color: #FF4848; /* Color del botón CTA en hover */
+            text-decoration: none;
+            color: #fff;
+        
+        
+        }
+        /* Estilos para el footer */
+.footer {
+    background-color: #333;
+    padding: 50px 0;
+    color: #fff;
+    text-align: center;
+}
+
+.logo-footer {
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+
+.descripcion-footer {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.redes-sociales-footer {
+    margin-top: 20px;
+}
+
+.icono-red-social {
+    font-size: 36px;
+    margin: 0 15px;
+    color: #fff;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.icono-red-social:hover {
+    transform: scale(1.2);
+    color: #33EAD9;
+}
+
+.titulo-enlaces {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.enlaces-rapidos {
+    list-style: none;
+    padding: 0;
+}
+
+.enlaces-rapidos li {
+    margin-bottom: 10px;
+}
+
+.enlaces-rapidos a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.enlaces-rapidos a:hover {
+    color: #33EAD9;
+}
+
+.titulo-contacto {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.direccion,
+.telefono,
+.correo {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.titulo-newsletter {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.descripcion-newsletter {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.formulario-newsletter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#email {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    transition: border-bottom 0.3s;
+}
+
+#email:focus {
+    border-bottom: 2px solid #33EAD9;
+    outline: none;
+}
+
+.btn-subscribirse {
+    background-color: #33EAD9;
+    color: #fff;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-subscribirse:hover {
+    background-color: #22C1A5;
+}
+
+        </style>
+<!-- Sección de Portada -->
+<section class="portada">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-white text-center home-content">
+                <h1 class="titulo-portada"><span class="welcome-text"></span></h1>
+                <p class="descripcion-portada">Somos expertos en desarrollo web y estamos aquí para ayudarte. ¡Conéctate con nosotros!</p>
+                <div class="redes-sociales">
+                    <a href="#" class="icono-red-social"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="icono-red-social"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="icono-red-social"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="icono-red-social"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="#" class="btn btn-conectanos cta-button">Conéctanos</a>
+            </div>
+            <div class="col-md-6">
+                <img src="https://pmedia.es/wp-content/uploads/2020/06/Desarrollo_web.png" alt="Tu Imagen" class="img-empresa">
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+// Inicializa Typed.js para el efecto de máquina de escribir
+var options = {
+    strings: ["Bienvenido a", "DevTeam"],
+    typeSpeed: 100,
+    startDelay: 1000,
+    backSpeed: 50,
+    backDelay: 1000,
+    loop: true
+};
+var typed = new Typed(".welcome-text", options);
+
+// Animación de aparición con GSAP para los elementos
+gsap.from(".home-content", { duration: 2, opacity: 0, y: -50, ease: "power2.inOut" });
+gsap.from(".img-empresa", { duration: 2, opacity: 0, x: -50, ease: "power2.inOut" });
+gsap.from(".cta-button", { duration: 2, opacity: 0, y: 50, ease: "power2.inOut" });
+
+
+</script>
+
+<script>
+    
+    </script>
+    
+   <!-- Sección Acerca de Nosotros -->
+   <section class="about-us">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="about-content">
+                    <h2>Nuestra Historia</h2>
+                    <p>Somos un equipo apasionado de expertos en desarrollo de software. Nuestra empresa se fundó con la visión de transformar ideas en soluciones digitales innovadoras. Con años de experiencia y un compromiso inquebrantable con la excelencia, estamos aquí para ayudarte a alcanzar tus objetivos.</p>
+                    <h2>Misión</h2>
+                    <p>Nuestra misión es proporcionar soluciones tecnológicas de vanguardia que impulsen el éxito de nuestros clientes y mejoren la vida de las personas.</p>
+                    <h2>Visión</h2>
+                    <p>Nuestra visión es liderar la industria de desarrollo de software a través de la innovación constante y la excelencia en la entrega de soluciones digitales de alta calidad.</p>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="team-members">
+                    <div class="row">
+                        <!-- Miembro 1 -->
+                        <div class="col-md-6">
+                            <div class="team-member">
+                                <div class="member-img">
+                                    <img src="https://besthqwallpapers.com/Uploads/10-6-2022/199044/thumb2-lionel-messi-with-cup-4k-2022-argentina-national-football-team-leo-messi.jpg" alt="Miembro del equipo">
+                                    <div class="member-info">
+                                        <h4>HILLARY YOHANA</h4>
+                                        <p>CEO y Fundador</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Miembro 2 -->
+                        <div class="col-md-6">
+                            <div class="team-member">
+                                <div class="member-img">
+                                    <img src="https://besthqwallpapers.com/Uploads/10-6-2022/199044/thumb2-lionel-messi-with-cup-4k-2022-argentina-national-football-team-leo-messi.jpg" alt="Miembro del equipo">
+                                    <div class="member-info">
+                                        <h3>Roider Millares Mano</h3>
+                                        <p>Desarrolladora Principal</p>
+                                        <p>Especialista en desarrollo web y móvil con un enfoque en la experiencia del usuario.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Miembro 3 -->
+                        <div class="col-md-6">
+                            <div class="team-member">
+                                <div class="member-img">
+                                    <img src="https://besthqwallpapers.com/Uploads/10-6-2022/199044/thumb2-lionel-messi-with-cup-4k-2022-argentina-national-football-team-leo-messi.jpg" alt="Miembro del equipo">
+                                    <div class="member-info">
+                                        <h4>Gabriel Cruz</h4>
+                                        <p>Diseñador UX/UI</p>
+                                        <p>Creador de interfaces de usuario impactantes que mejoran la usabilidad.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Miembro 4 -->
+                        <div class="col-md-6">
+                            <div class="team-member">
+                                <div class="member-img">
+                                    <img src="https://besthqwallpapers.com/Uploads/10-6-2022/199044/thumb2-lionel-messi-with-cup-4k-2022-argentina-national-football-team-leo-messi.jpg" alt="Miembro del equipo">
+                                    <div class="member-info">
+                                        <h4>Yerko Valdivia</h4>
+                                        <p>Desarrolladora Front-end</p>
+                                        <p>Especialista en crear experiencias de usuario atractivas en aplicaciones web.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Miembro 5 -->
+                        <div class="col-md-6">
+                            <div class="team-member">
+                                <div class="member-img">
+                                    <img src="https://www.pngall.com/wp-content/uploads/4/Cristiano-Ronaldo-PNG-Image-File.png" alt="Miembro del equipo">
+                                    <div class="member-info">
+                                        <h3>Leonardo Peña</h3>
+                                        <p>Desarrolladora Back-end</p>
+                                        <p>Experta en programación y optimización de sistemas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Miembro 6 -->
+                        <div class="col-md-6">
+                            <div class="team-member">
+                                <div class="member-img">
+                                    <img src="https://besthqwallpapers.com/Uploads/10-6-2022/199044/thumb2-lionel-messi-with-cup-4k-2022-argentina-national-football-team-leo-messi.jpg" alt="Miembro del equipo">
+                                    <div class="member-info">
+                                        <h4>Carlos Eduardo Crespo</h4>
+                                        <p>Analista de Datos</p>
+                                        <p>Apasionado por extraer conocimientos valiosos a partir de datos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Continúa con más miembros si es necesario -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+<!-- Sección Servicios/Productos -->
+<section class="servicios-productos">
+    <div class="container">
+        <h2 class="titulo">Nuestros Servicios y Productos</h2>
+        <div class="row">
+            <!-- Tarjeta 1 -->
+            <div class="col-md-4">
+                <div class="tarjeta-servicio">
+                    <div class="tarjeta-contenido">
+                        <h3 class="titulo-servicio">Desarrollo Web</h3>
+                        <p class="descripcion-servicio">Creamos sitios web modernos y funcionales para tu negocio.</p>
+                        <a href="#" class="ver-mas">Ver más</a>
+                    </div>
+                    <div class="tarjeta-imagen">
+                        <img src="https://static.vecteezy.com/system/resources/previews/009/298/074/non_2x/3d-illustration-of-web-development-png.png" alt="Desarrollo Web">
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="col-md-4">
+                <div class="tarjeta-servicio">
+                    <div class="tarjeta-contenido">
+                        <h3 class="titulo-servicio">Aplicaciones Móviles</h3>
+                        <p class="descripcion-servicio">Desarrollamos aplicaciones móviles personalizadas para tus necesidades.</p>
+                        <a href="#" class="ver-mas">Ver mas</a>
+                    </div>
+                    <div class="tarjeta-imagen">
+                        <img src="https://static.vecteezy.com/system/resources/previews/009/298/074/non_2x/3d-illustration-of-web-development-png.png" alt="Aplicaciones Móviles">
+                    </div>
+                </div>
+            </div>
+            <!-- Tarjeta 3 -->
+            <div class="col-md-4">
+                <div class="tarjeta-servicio">
+                    <div class="tarjeta-contenido">
+                        <h3 class="titulo-servicio">Diseño UI/UX</h3>
+                        <p class="descripcion-servicio">Creamos experiencias de usuario atractivas y funcionales.</p>
+                        <a href="#" class="ver-mas">Ver más</a>
+                    </div>
+                    <div class="tarjeta-imagen">
+                        <img src="https://static.vecteezy.com/system/resources/previews/009/298/074/non_2x/3d-illustration-of-web-development-png.png" alt="Diseño UI/UX">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Sección Portafolio/Proyectos -->
+<section class="portfolio">
+    <div class="container">
+        <h2 class="section-title">Portafolio-Proyectos</h2>
+        <div class="portfolio-carousel owl-carousel">
+            <!-- Proyecto 1 -->
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <img src="https://static.vecteezy.com/system/resources/previews/009/298/074/non_2x/3d-illustration-of-web-development-png.png" alt="Proyecto 1">
+                </div>
+                <div class="portfolio-content">
+                    <h3>Proyecto 1</h3>
+                    <p>Descripción del proyecto 1.</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+            <!-- Proyecto 2 -->
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <img src="https://static.vecteezy.com/system/resources/previews/009/298/074/non_2x/3d-illustration-of-web-development-png.png" alt="Proyecto 2">
+                </div>
+                <div class="portfolio-content">
+                    <h3>Proyecto 2</h3>
+                    <p>Descripción del proyecto 2.</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+            <!-- Proyecto 3 -->
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <img src="https://static.vecteezy.com/system/resources/previews/009/298/074/non_2x/3d-illustration-of-web-development-png.png" alt="Proyecto 3">
+                </div>
+                <div class="portfolio-content">
+                    <h3>Proyecto 3</h3>
+                    <p>Descripción del proyecto 3.</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+            <!-- Proyecto 4 -->
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <img src="https://static.vecteezy.com/system/resources/previews/009/298/074/non_2x/3d-illustration-of-web-development-png.png" alt="Proyecto 4">
+                </div>
+                <div class="portfolio-content">
+                    <h3>Proyecto 4</h3>
+                    <p>Descripción del proyecto 4.</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+            <!-- Proyecto 5 -->
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <img src="https://static.vecteezy.com/system/resources/previews/009/298/074/non_2x/3d-illustration-of-web-development-png.png" alt="Proyecto 5">
+                </div>
+                <div class="portfolio-content">
+                    <h3>Proyecto 5</h3>
+                    <p>Descripción del proyecto 5.</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+            <!-- Proyecto 6 -->
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <img src="https://static.vecteezy.com/system/resources/previews/009/298/074/non_2x/3d-illustration-of-web-development-png.png" alt="Proyecto 6">
+                </div>
+                <div class="portfolio-content">
+                    <h3>Proyecto 6</h3>
+                    <p>Descripción del proyecto 6.</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>$(document).ready(function() {
+    $(".portfolio-carousel").owlCarousel({
+        items: 3, // Mostrar 3 proyectos a la vez
+        loop: true, // Bucle infinito
+        autoplay: true, // Reproducción automática
+        autoplayTimeout: 5000, // Intervalo de cambio automático (5 segundos)
+        nav: true, // Flechas de navegación
+        navText: ["<i class='fas fa-chevron-left'></i>", "<i class='fas fa-chevron-right'></i>"], // Iconos de flechas
+        responsive: {
+            0: {
+                items: 1 // En pantallas pequeñas, mostrar 1 proyecto a la vez
+            },
+            768: {
+                items: 2 // En pantallas medianas, mostrar 2 proyectos a la vez
+            },
+            992: {
+                items: 3 // En pantallas grandes, mostrar 3 proyectos a la vez
+            }
+        }
+    });
+});
+</script>  
+<!-- Sección de Call-to-Action Final -->
+<section class="cta-final">
+    <div class="container text-center">
+        <h2>¿Listo para comenzar tu proyecto?</h2>
+        <p>Estamos aquí para ayudarte a convertir tu visión en realidad. Contáctanos hoy mismo y comencemos.</p>
+        <a href="#contacto" class="btn-cta">¡Ponte en Contacto!</a>
+    </div>
+</section>
+<!-- Sección de Características o Tecnologías -->
+<section class="caracteristicas">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="caracteristica-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Desarrollo Web</h3>
+                    <p>Desarrollamos sitios web modernos y atractivos utilizando HTML, CSS y JavaScript.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="caracteristica-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Base de Datos</h3>
+                    <p>Gestionamos bases de datos eficientes utilizando MySQL y tecnologías relacionadas.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="caracteristica-card">
+                    <i class="fab fa-php"></i>
+                    <h3>Desarrollo PHP</h3>
+                    <p>Programamos aplicaciones robustas y escalables con PHP y Laravel.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="caracteristica-card">
+                    <i class="fab fa-js"></i>
+                    <h3>Desarrollo Frontend</h3>
+                    <p>Creación de experiencias interactivas con JavaScript y React.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="caracteristica-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML & CSS</h3>
+                    <p>Utilizamos las últimas tecnologías HTML5 y CSS3 para un diseño impresionante.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="caracteristica-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Características Clave</h3>
+                    <ul>
+                        <li>Seguridad avanzada</li>
+                        <li>Escalabilidad</li>
+                        <li>Experiencia de usuario excepcional</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
+<!-- Sección Testimonios -->
+<section class="testimonial">
+    <div class="container">
+        <div class="testimonial-icon">
+            <i class="fas fa-quote-left"></i>
+        </div>
+        <div class="owl-carousel testimonials-carousel">
+            <!-- Testimonio 1 -->
+            <div class="testimonial-item">
+                <div class="testimonial-img">
+                    <img src="https://p4.wallpaperbetter.com/wallpaper/465/187/652/soccer-lionel-messi-argentina-national-football-team-hd-wallpaper-preview.jpg" alt="Image" class="small-image">
+                </div>
+                <div class="testimonial-text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit tincidunt, quis suscipit justo dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <h3>Nombre del Cliente</h3>
+                    <h4>Profesión</h4>
+                </div>
+            </div>
+            <!-- Testimonio 2 -->
+            <div class="testimonial-item">
+                <div class="testimonial-img">
+                    <img src="https://p4.wallpaperbetter.com/wallpaper/465/187/652/soccer-lionel-messi-argentina-national-football-team-hd-wallpaper-preview.jpg" alt="Image" class="small-image">
+                </div>
+                <div class="testimonial-text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit tincidunt, quis suscipit justo dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <h3>Nombre del Cliente</h3>
+                    <h4>Profesión</h4>
+                </div>
+            </div>
+            <!-- Testimonio 3 -->
+            <div class="testimonial-item">
+                <div class="testimonial-img">
+                    <img src="https://p4.wallpaperbetter.com/wallpaper/465/187/652/soccer-lionel-messi-argentina-national-football-team-hd-wallpaper-preview.jpg " alt="Image" class="small-image">
+                </div>
+                <div class="testimonial-text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam accumsan lacus eget velit tincidunt, quis suscipit justo dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <h3>Nombre del Cliente</h3>
+                    <h4>Profesión</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+       <!-- Sección Contacto -->
+<section class="contacto">
+    <div class="container">
+        <h2 class="titulo-contacto">¡Contáctanos!</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="informacion-contacto">
+                    <h3 class="subtitulo-contacto">Información de Contacto</h3>
+                    <p class="direccion"><i class="fas fa-map-marker-alt"></i> Dirección: Calle Principal, Ciudad</p>
+                    <p class="telefono"><i class="fas fa-phone-alt"></i> Teléfono: +123 456 789</p>
+                    <p class="correo"><i class="fas fa-envelope"></i> Correo Electrónico: info@tuempresa.com</p>
+                    <div class="redes-sociales-contacto">
+                        <a href="#" class="icono-red-social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="icono-red-social"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="icono-red-social"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="icono-red-social"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="formulario-contacto">
+                    <h3 class="subtitulo-contacto">Envía un Mensaje</h3>
+                    <form action="#" method="POST">
+                        <input type="text" name="nombre" placeholder="Nombre" required>
+                        <input type="email" name="correo" placeholder="Correo Electrónico" required>
+                        <input type="tel" name="telefono" placeholder="Teléfono" required>
+                        <textarea name="mensaje" placeholder="Mensaje" rows="4" required></textarea>
+                        <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script>   // Testimonials carousel
+    $(".testimonials-carousel").owlCarousel({
+        center: true,
+        autoplay: true,
+        dots: true,
+        loop: true,
+        responsive: {
+            0:{
+                items:1
+            }
+        }
+    });
+    
+    </script>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="logo-footer">
+                    <img src="https://logodownload.org/wp-content/uploads/2014/04/coca-cola-logo-1.png" alt="Logo" class="logo">
+                </div>
+                <p class="descripcion-footer">Somos expertos en desarrollo web y software. ¡Conéctate con nosotros!</p>
+                <div class="redes-sociales-footer">
+                    <a href="#" class="icono-red-social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="icono-red-social"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="icono-red-social"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="icono-red-social"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <h3 class="titulo-enlaces">Enlaces Rápidos</h3>
+                <ul class="enlaces-rapidos">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Acerca de Nosotros</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Portafolio</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h3 class="titulo-contacto">Contacto</h3>
+                <p class="direccion"><i class="fas fa-map-marker-alt"></i> 123 Calle Principal, Ciudad</p>
+                <p class="telefono"><i class="fas fa-phone"></i> +1 (123) 456-7890</p>
+                <p class="correo"><i class="fas fa-envelope"></i> info@tuempresa.com</p>
+            </div>
+            <div class="col-md-3">
+                <h3 class="titulo-newsletter">Suscríbete al Newsletter</h3>
+                <p class="descripcion-newsletter">Recibe las últimas noticias y actualizaciones directamente en tu correo.</p>
+                <form class="formulario-newsletter">
+                    <input type="email" class="form-control" id="email" placeholder="Correo Electrónico">
+                    <button type="submit" class="btn-subscribirse">Suscribirse</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
